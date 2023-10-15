@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import AudioRecorder from './AudioRecorder';
+import AudioInputAndDisplay from './AudioRecorder';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AudioRecorder />
+    <AudioInputAndDisplay />
   </React.StrictMode>
 );
