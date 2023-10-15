@@ -71,6 +71,7 @@ export default function AudioInputAndDisplay() {
       )}
 
       {blob && (
+        <React.Fragment>
         <AudioVisualizer
           blob={blob}
           width={500}
@@ -79,10 +80,10 @@ export default function AudioInputAndDisplay() {
           gap={2}
           barColor={'#4b2e83'}
         />
+        <button onClick={() => addAudioElement(blob)}>Add Audio Element</button>
+        <button onClick={() => saveAudio(blob)}>Save Audio</button>
+        </React.Fragment>
       )}
-
-      <button onClick={() => addAudioElement(blob)}>Add Audio Element</button>
-      <button onClick={() => saveAudio(blob)}>Save Audio</button>
     </div>
   );
 }
